@@ -24,13 +24,6 @@ galleryItems.forEach(({preview, original, description}) => {
     item.appendChild(link);
     gallery.appendChild(item);
 
-    link.addEventListener('click', (event)=>{
-        event.preventDefault();
-        const instance = basicLightbox.create(`<img src="${original}">`);
-        instance.show();
-    });
-
-
 });
 
 var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
